@@ -1,0 +1,19 @@
+{
+  "name": "text-sentiment-analysis",
+  "version": "1.0.0",
+  "description": "This sentiment analysis extracts sentiment in a given string of text. Sentiment analysis, also called 'opinion mining', uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text. This algorithm classifies each sentence in the input as very negative, negative, neutral, positive, or very positive.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edonovanto/text-sentiment-analysis.git"
+  },
+  "author": "Edo Novanto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edonovanto/text-sentiment-analysis/issues"
+  },
+  "homepage": "https://github.com/edonovanto/text-sentiment-analysis#readme"
+}
