@@ -30,7 +30,7 @@ class TextResult extends HTMLElement {
     </style>
 
     <div class="result">
-    <h2 class="placeholder">${this._result}</h2>
+    <h2 class="placeholder">Score for your caption is : <b>${this._result}</b></h2>
     </div>
       `;
   }

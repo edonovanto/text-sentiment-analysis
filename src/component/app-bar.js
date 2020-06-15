@@ -26,7 +26,7 @@ class AppBar extends HTMLElement {
           }
     
           h2 {
-            font-size: 55px;
+            font-size: 60px;
             font-family: 'Merriweather', serif;
             padding: 16px;
             padding-top: 0;
@@ -34,7 +34,7 @@ class AppBar extends HTMLElement {
           }
 
           p{
-            padding : 3px 20px 0px 20px;
+            padding : 3px 20px 15px 20px;
           }
 
         </style>
