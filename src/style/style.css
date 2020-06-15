@@ -1,15 +1,24 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Roboto, sans-serif;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 
 main {
-    width: 90%;
-    max-width: 800px;
-    margin: 32px auto;
+  width: 90%;
+  max-width: 800px;
+  margin: 32px auto;
+}
+
+.logo {
+  margin: 20px;
+  margin-bottom: 0;
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

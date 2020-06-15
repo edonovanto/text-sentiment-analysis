@@ -32,16 +32,18 @@ class SearchBar extends HTMLElement {
   }
   
   .search-container > input {
-      width: 75%;
+      width: 80%;
       padding: 16px;
       border: 0;
-      border-bottom: 1px solid cornflowerblue;
-      font-weight: bold;
+      border-bottom: 1px solid #262626;
+      font-size : 20px;
+      font-style: italic;
+      font-family : 'Tangerine';
   }
   
   .search-container > input:focus {
       outline: 0;
-      border-bottom: 2px solid cornflowerblue;
+      border-bottom: 2px solid #262626;
   }
   
   .search-container > input:focus::placeholder {
@@ -49,16 +51,17 @@ class SearchBar extends HTMLElement {
   }
   
   .search-container >  input::placeholder {
-      color: cornflowerblue;
+      color: #262626;
       font-weight: normal;
   }
   
   .search-container > button {
-      width: 23%;
+      border-radius: 25px;
+      width: 18%;
       cursor: pointer;
       margin-left: auto;
       padding: 16px;
-      background-color: cornflowerblue;
+      background-color: #414141;
       color: white;
       border: 0;
       text-transform: uppercase;

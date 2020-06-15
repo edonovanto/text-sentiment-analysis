@@ -23,9 +23,15 @@ class TextResult extends HTMLElement {
         user-select: none;
      }
 
+      .result {
+        text-align : center;
+      }
+
     </style>
 
-        <h2 class="placeholder">${this._result}</h2>
+    <div class="result">
+    <h2 class="placeholder">${this._result}</h2>
+    </div>
       `;
   }
 
@@ -42,6 +48,7 @@ class TextResult extends HTMLElement {
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
+        text-align : center;
      }
 
     </style>

@@ -21,18 +21,26 @@ class AppBar extends HTMLElement {
           :host {
             display: block;
             width: 100%;
-            background-color:#262626;
-            color: white;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            color: #262626;
             text-align: center;
           }
     
           h2 {
+            font-size: 55px;
+            font-family: 'Merriweather', serif;
             padding: 16px;
+            padding-top: 0;
+            padding-bottom: 0;
           }
+
+          p{
+            padding : 3px 20px 0px 20px;
+          }
+
         </style>
         
-        <h2>Sentimen Analysis</h2>
+        <h2>Sentiment Analysis</h2>
+        <p>-Analyze your caption before upload it to social media!-</p>
         `;
   }
 }
