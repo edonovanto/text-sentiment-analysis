@@ -1,36 +1,38 @@
 class Analyze {
+  static analyzeText(keyword) {
 
-    static analyzeText(keyword){
-
-        return fetch(`https://api.deepai.org/api/sentiment-analysis`,{
-            method : 'POST',
-            headers :{
-                "api-key" : "24e57c9d-60f6-43f4-bf47-71d833c9a1dc"
-            },
-            body : JSON.stringify({
-                text : `${keyword}`
-            })
-        })
-        .then(response => {
-            console.log(keyword)
-            console.log(response)
-            return response.json()
-        })
-        .then(responseJson=>{
-            if (responseJson.output){
-                // console.log("SUCCESS")
-                return Promise.resolve(responseJson.output)
-            }
-            else{
-                // console.log("FAIL")
-                return Promise.reject("We couldn't analyze the text")
-            }
-        })
-        .catch(error => {
-            // console.log(error)
-            return Promise.reject(error)
-        })
+    if(!keyword){
+        return Promise.reject("We couldn't Analyze the text");
     }
+
+    var myHeaders = new Headers();
+    myHeaders.append("api-key", "24e57c9d-60f6-43f4-bf47-71d833c9a1dc");
+
+    var formdata = new FormData();
+    formdata.append("text", `${keyword}`);
+
+    var requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: formdata,
+      redirect: "follow",
+    };
+
+    return fetch(
+      "https://api.deepai.org/api/sentiment-analysis",
+      requestOptions
+    )
+      .then((response) => {
+        return response.json();
+      })
+      .then((result) => {
+        console.log(result.output);
+        return Promise.resolve(result.output);
+      })
+      .catch((error) => {
+        return Promise.reject(error);
+      });
+  }
 }
 
-export default Analyze
+export default Analyze;
