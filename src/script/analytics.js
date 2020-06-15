@@ -2,7 +2,7 @@ class Analyze {
   static analyzeText(keyword) {
 
     if(!keyword){
-        return Promise.reject("We couldn't Analyze the text");
+        return Promise.reject("Please insert the text to analyze");
     }
 
     var myHeaders = new Headers();
