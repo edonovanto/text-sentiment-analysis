@@ -1,5 +1,5 @@
 # text-sentiment-analysis
-Text sentiment analysis to give score about a caption. The score output will be given from very negative, negative, neutral, positive, to very positive
+This sentiment analysis extracts sentiment in a given string of text. Sentiment analysis, also called 'opinion mining', uses natural language processing, text analysis and computational linguistics to identify and detect subjective information from the input text. This algorithm classifies each sentence in the input as very negative, negative, neutral, positive, or very positive.
 
 ## Analytics Preview
 
@@ -13,20 +13,21 @@ Text sentiment analysis to give score about a caption. The score output will be 
 $ npm install
 ```
 
-## Build while watching files
+## Build the Production
 
 ```
 $ npm run build
 ```
 
-## Serve at localhost
+## Serve at localhost (Development)
 
 ```
-$ npm start
+$ npm run start-dev
 ```
 
 ## References
 + [Sentiment Analysis Calculation](https://deepai.org/machine-learning-model/sentiment-analysis)
++ Stanford University NLP
 
 ## Author
 
