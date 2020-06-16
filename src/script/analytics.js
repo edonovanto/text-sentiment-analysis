@@ -26,7 +26,6 @@ class Analyze {
         return response.json();
       })
       .then((result) => {
-        console.log(result.output);
         return Promise.resolve(result.output);
       })
       .catch((error) => {
