@@ -5,13 +5,13 @@ class Analyze {
         return Promise.reject("Please insert the text to analyze");
     }
 
-    var myHeaders = new Headers();
+    const myHeaders = new Headers();
     myHeaders.append("api-key", "24e57c9d-60f6-43f4-bf47-71d833c9a1dc");
 
-    var formdata = new FormData();
+    const formdata = new FormData();
     formdata.append("text", `${keyword}`);
 
-    var requestOptions = {
+    const requestOptions = {
       method: "POST",
       headers: myHeaders,
       body: formdata,
